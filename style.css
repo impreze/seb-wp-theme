@@ -1,0 +1,268 @@
+/*Theme Name: SEB WP Theme
+Theme URI: https://github.com/impreze/seb-wp-theme
+Description: A simple Wordpress theme for those who just want to post text, images, and media.
+Version: 1.1 or any other version you want
+Author: Sylvester Ezeani
+Author URI:  http://www.sylvesterezeani.com
+Tags: bootrap, responsive, sylvester, ezeani, mobile, minimal, free
+*/
+
+@import url('css/bootstrap.min.css');
+body {
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-color: #2e2e2e
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+a,
+a:visited,
+a:focus,
+a:active {
+	color: #ff7f50;
+	-o-transition: .25s;
+	-ms-transition: .25s;
+	-moz-transition: .25s;
+	-webkit-transition: .25s;
+	transition: .25s;
+}
+
+a:hover {
+	color: #898989;
+	text-decoration: none;
+}
+
+
+/*** Header Section ***/
+
+#header {
+	padding-top: 40px;
+}
+
+.avy {
+	width: 200px;
+	height: auto;
+}
+
+.blog-info {
+	margin: 60px auto;
+}
+
+.blog-title {
+	padding: 10px;
+	font-size: 30px;
+	font-weight: 700px;
+}
+
+.blog-description {
+	color: #8d8d8d;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.blog-title,
+.blog-description {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+	#header {
+		text-align: center;
+		padding-top: 10px
+	}
+	.avy {
+		width: 175px;
+		height: auto;
+	}
+	.blog-title {
+		padding: 30px
+	}
+	.blog-title:after {
+		content: "\a";
+		white-space: pre;
+	}
+	;
+}
+
+
+/*** Menu ***/
+
+.navigation {
+	padding-left: 10px;
+}
+
+.site-nav {
+	margin: 0px;
+	padding: 0px;
+}
+
+.site-nav:before,
+.site-nav:after {
+	content: "";
+	display: table;
+}
+
+.site-nav:after {
+	clear: both;
+}
+
+.site-nav {
+	*zoom: 1;
+}
+
+.site-nav li {
+	background-color: #fff;
+	padding: 5px;
+	list-style: none;
+	display: inline-block;
+	border-radius: 5%;
+	transition: all 0.3s ease;
+}
+
+.site-nav li:hover {
+	transform: translateY(-5px);
+}
+
+.site-nav li a {
+	text-decoration: none;
+	color: #ff7f50;
+	font-size: 14px;
+}
+
+
+/*** POST Area Section ***/
+
+#post-area {
+	padding: 10px 10px 15px 10px;
+}
+
+.post,
+.pagination {
+	padding: 15px;
+}
+
+.post-title a,
+.post-title a:visited {
+	color: #2e2e2e;
+	text-decoration: none;
+}
+
+.post-title a:hover {
+	color: #898989;
+}
+
+.post-meta {
+	font-weight: 400;
+}
+
+.post-title a,
+.post-title a:visited {
+	color: #2e2e2e;
+	text-decoration: none;
+}
+
+.post-title a:hover {
+	color: #898989;
+}
+
+.post-content {
+	margin: 20px 0;
+}
+
+.post-content img {
+	max-width: 90%;
+	height: auto;
+	display: block;
+	margin: 15px auto;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.videoWrapper iframe,
+.videoWrapper object,
+.videoWrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*** Footer ***/
+
+#footer {
+	padding-top: 15px;
+	height: 50px;
+	font-size: 14px;
+}
+
+
+/*** Pagination ***/
+
+ul.page-numbers {
+	list-style: none;
+	margin: 0;
+}
+
+.page-numbers:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+ul.page-numbers li {
+	display: inline-block;
+	margin: 0 4px 4px 0;
+	text-align: center;
+}
+
+.page-numbers a,
+.page-numbers span {
+	line-height: 1.6em;
+	display: block;
+	padding: 0 6px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: 400;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	color: #888;
+}
+
+.page-numbers a span {
+	padding: 0
+}
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+	color: #fff;
+	background: #ff7f50;
+	text-decoration: none;
+}
+
+.page-numbers:hover {
+	text-decoration: none
+}
