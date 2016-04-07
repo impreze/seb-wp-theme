@@ -1,7 +1,7 @@
 /*Theme Name: SEB WP Theme
-Theme URI: https://github.com/impreze/seb-wp-theme
+Theme URI: https://sylvesterezeani.com/blog
 Description: A simple Wordpress theme for those who just want to post text, images, and media.
-Version: 1.1 or any other version you want
+Version: 1.0 or any other version you want
 Author: Sylvester Ezeani
 Author URI:  http://www.sylvesterezeani.com
 Tags: bootrap, responsive, sylvester, ezeani, mobile, minimal, free
@@ -10,9 +10,9 @@ Tags: bootrap, responsive, sylvester, ezeani, mobile, minimal, free
 @import url('css/bootstrap.min.css');
 body {
 	background-color: #fff;
+	color: #2e2e2e;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	font-color: #2e2e2e
 }
 
 h1,
@@ -28,12 +28,12 @@ a,
 a:visited,
 a:focus,
 a:active {
-	color: #ff7f50;
-	-o-transition: .25s;
-	-ms-transition: .25s;
-	-moz-transition: .25s;
-	-webkit-transition: .25s;
-	transition: .25s;
+	color: #00b1aa;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
 }
 
 a:hover {
@@ -83,9 +83,10 @@ a:hover {
 	.avy {
 		width: 175px;
 		height: auto;
+		padding-top: 20px;
 	}
 	.blog-title {
-		padding: 30px
+		padding-top: 30px
 	}
 	.blog-title:after {
 		content: "\a";
@@ -126,7 +127,7 @@ a:hover {
 	list-style: none;
 	display: inline-block;
 	border-radius: 5%;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 }
 
 .site-nav li:hover {
@@ -135,7 +136,7 @@ a:hover {
 
 .site-nav li a {
 	text-decoration: none;
-	color: #ff7f50;
+	color: #00b1aa;
 	font-size: 14px;
 }
 
@@ -259,7 +260,7 @@ ul.page-numbers li {
 .page-numbers.current,
 .page-numbers.current:hover {
 	color: #fff;
-	background: #ff7f50;
+	background: #00b1aa;
 	text-decoration: none;
 }
 
